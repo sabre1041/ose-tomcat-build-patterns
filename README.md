@@ -21,7 +21,7 @@ The templates can be instantiated by executing the following commands
 
 ### Source to Image Build
 
-    oc new-app --template=tomcat8-build-patterns-docker
+    oc new-app --template=tomcat8-build-patterns-s2i
 
 ## Access the application 
 
