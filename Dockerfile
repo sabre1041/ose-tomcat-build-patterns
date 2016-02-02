@@ -9,4 +9,4 @@ RUN mkdir -p ${HOME}/source && \
     if [ -d ${HOME}/source/deployments ]; then cp -v ${HOME}/source/deployments/*.war $JWS_HOME/webapps 2> /dev/null; fi &&  \
     rm -rf ${HOME}/.m2
     
-ENTRYPOINT ["/usr/local/s2i/run"]
+ENTRYPOINT ["/opt/webserver/bin/launch.sh"]
